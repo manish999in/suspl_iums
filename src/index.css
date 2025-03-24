@@ -1,0 +1,60 @@
+body {
+  background-color: #f0f4f8 !important;
+}
+
+.error-message1 {
+  color: rgb(230, 10, 10);
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  font-weight: 700;
+}
+
+/* Spinner Loader Style */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  font-size: 2em;
+  color: #333;
+}
+
+input#searchInput:focus {
+  border: none;
+  outline: 4px solid #bda9d3;
+}
+
+/* Style elements with tabindex="0" */
+ 
+[tabindex="0"]:focus {
+  border: none;
+  outline: 4px solid #bda9d3;
+}
+
+
+/* Add this to your CSS file */
+
+/* Add a glowing effect on focus */
+.search-input:focus {
+  animation: focusAnimation 0.5s ease-out;
+  outline: none; /* Remove the default outline */
+  border: 2px solid #4CAF50; /* Change the border color to green */
+}
+
+/* Define the glowing animation */
+@keyframes focusAnimation {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 1);
+    transform: scale(1);
+  }
+}
+

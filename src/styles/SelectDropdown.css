@@ -1,0 +1,72 @@
+/* Base Styles */
+.select-component {
+  margin-bottom: 4px;
+    z-index: 10000; /* Ensure it stays above other modal elements */
+  
+}
+
+/* Error state border */
+.border-red {
+  border-color: #ff4d4d !important;
+}
+
+/* Error message styling */
+.error-message1 {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Label styling */
+.newLabel {
+  /* font-weight: bold; */
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Custom select dropdown styles */
+.custom-select__control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  transition: border-color 0.3s ease;
+  min-height: 30px !important;  /* Ensure consistent height */
+  padding: 0 8px !important;  /* Consistent padding */
+}
+
+.custom-select__control:hover {
+  border-color: #aaa;
+}
+
+.custom-select__menu {
+  font-size: 14px;
+}
+
+.custom-select__control:focus {
+  border-color: #007bff !important;  /* Change border color on focus */
+  box-shadow: 0 0 0 1px #007bff !important;  /* Optional: Add a focus shadow */
+  min-height: 30px !important;  /* Ensure consistent height on focus */
+  padding: 0 8px !important;  /* Prevent padding from increasing on focus */
+}
+
+/* Specifically for the smaller size (e.g., size="small") */
+.custom-select__control.custom-select__control--small {
+  min-height: 30px !important; /* Ensure consistent small size */
+  padding: 0 8px !important;
+}
+
+.css-hlgwow {
+  padding: 0 !important;
+}
+
+.css-1xc3v61-indicatorContainer {
+  padding: 0 !important;
+}
+
+/* Focused state for the control */
+.custom-select__control:focus {
+  border-color: #007bff !important;
+  box-shadow: 0 0 0 1px #007bff !important;
+  min-height: 30px !important;  /* Ensure the min-height remains the same */
+  padding: 0 8px !important; /* Ensure padding remains the same */
+}

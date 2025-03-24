@@ -1,0 +1,44 @@
+.success {
+    color: green; /* Color for success message */
+}
+
+.error {
+    color: red; /* Color for error message */
+}
+
+.error-message {
+    transition: opacity 0.5s ease-in-out; /* Transition for opacity */
+}
+
+.fade-out {
+    opacity: 0; /* Make the message invisible */
+}
+
+.error-message {
+    color: #ff4d4d; /* A darker shade of red for a classic look */
+    font-weight: bold; /* Make the text bold */
+    margin-top: 10px; /* Space above the error message */
+    font-size: 16px; /* Adjust font size as needed */
+    display: flex; /* Flexbox for alignment */
+    letter-spacing: 1px; /* Slightly increased spacing for classic typography */
+}
+
+.classic-animation {
+    display: inline-block; /* Ensure each character can animate individually */
+    opacity: 0; /* Start fully transparent */
+    transform: translateX(20px); /* Start lower than the final position */
+    animation: fadeInSlide 0.9s forwards; /* Fade and slide in effect */
+    animation-delay: calc(0.1s * var(--index)); /* Delay based on the character index */
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateX(20px); /* Slide up from below */
+    }
+
+    to {
+        opacity: 1; /* End fully opaque */
+        transform: translateX(0); /* End at the original position */
+    }
+}

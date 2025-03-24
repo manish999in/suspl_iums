@@ -1,0 +1,45 @@
+/* App.css or your custom CSS file */
+
+/* General background and border for container */
+.container1 {
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+  }
+  
+ 
+
+
+  /* Custom style for the tabs */
+  .nav-tabs1 {
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .nav-link1 {
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Light border around each tab */
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: #f1f1f1; /* Light grey background for non-active tabs */
+  }
+  
+  .nav-link1.active {
+    margin-bottom: 10px;
+    background-color: #343a40; /* Dark background for the active tab */
+    color: white;
+    border-color: #343a40;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for active tab */
+  }
+  
+  .nav-link1:hover {
+    background-color: #e9ecef; /* Slightly darker background on hover */
+  }
+  
+  /* Card shadows for each tab */
+  .card1 {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
+    margin-bottom: 15px;
+  }
+  

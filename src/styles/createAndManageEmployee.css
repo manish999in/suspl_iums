@@ -1,0 +1,10 @@
+
+.addRemoveButtoninEmployeeMaster{
+    width: 163px  !important;
+    position: relative !important;
+    left: 19px !important;
+    cursor: pointer !important;
+    transition: transform 0.3s ease, opacity 0.3s ease !important;
+    bottom: 54px !important;
+    margin-top: 26px !important;
+}

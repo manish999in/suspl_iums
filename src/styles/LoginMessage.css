@@ -1,0 +1,45 @@
+/* LoginMessage.css */
+.newContainer {
+   background-image: url('../../public/img/large-triangles.svg'); /* Add your background image URL here */
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   position: relative;
+ }
+ 
+ .newContainer::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(255, 255, 255, 0.6); /* Light overlay to create a blur effect */
+   filter: blur(8px); /* Adjust the blur effect as needed */
+   z-index: 1; /* Ensure the blur effect is behind the content */
+ }
+ 
+ .newCard {
+   z-index: 2; /* Content should be above the blur effect */
+   background-color: white;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   max-width: 500px;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .newTitle h2 {
+   font-size: 2rem;
+   color: #333;
+ }
+ 
+ .newField span {
+   font-size: 1.1rem;
+   color: #555;
+ }
+ 

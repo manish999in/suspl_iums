@@ -1,0 +1,343 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Header styles */
+header.header.theme5 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px; /* Reduced height */
+  background: crimson; /* Bright blue background for header */
+  color: #ffffff; /* White text for contrast */
+  display: flex;
+  align-items: center;
+  padding: 0 15px; /* Reduced padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  z-index: 1000;
+  font-size: 14px; /* Smaller font size */
+  transition: background 0.3s; /* Transition for background color */
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-style: normal;
+}
+
+.ag-header-cell-label{
+  justify-content: center !important;
+}
+
+
+.bold {
+  background-color: #e0e0e0;
+  font-weight: bold; 
+}
+
+.header:hover {
+  background: rgb(247, 23, 68); /* Darker blue on hover */
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed; /* Fixed to the left */
+  top: 56px; /* Below the header */
+  left: 0;
+  width: 250px; /* Reduced sidebar width */
+  height: calc(100vh - 56px); /* Full height minus header */
+  background: #ffffff; /* White background for sidebar */
+  color: #333333; /* Dark text for contrast */
+  padding: 10px 0; /* Reduced padding */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow-y: auto; /* Show scrollbar when content overflows */
+  transition: width 0.3s ease; /* Smooth width transition */
+  z-index: 99; /* Ensure sidebar is above other elements */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on touch devices */
+  touch-action: pan-y; /* Allow vertical panning */
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Scrollbar styles */
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  opacity: 0; /* Hide scrollbar initially */
+  transition: opacity 0.3s ease; /* Smooth transition for scrollbar appearance */
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  opacity: 1; /* Show scrollbar on hover */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #e9ecef; /* Light gray track background */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #007bff; /* Blue thumb color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker thumb color on hover */
+}
+
+/* Firefox scrollbar */
+.sidebar {
+  scrollbar-width: thin; /* Thinner scrollbar in Firefox */
+  scrollbar-color:  #e9ecef; /* Thumb color and track color */
+}
+
+button.search-result-button.theme5{
+  background: rgb(218, 30, 67); /* Bright blue background for header */
+
+}
+
+/* Footer styles */
+footer.footer.theme5 {
+  background: crimson; /* Bright blue background for header */
+  color: #333333; /* Dark text for contrast */
+  text-align: center;
+  padding: 8px 0; /* Reduced padding */
+  position: fixed; /* Position at the bottom */
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Shadow above footer */
+  z-index: 99;
+  font-size: 12px; /* Smaller footer font size */
+}
+
+.menu-item,
+.submenu-item {
+  cursor: pointer;
+  padding: 8px 10px; /* Reduced padding */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  color: #333333; /* Dark text for menu items */
+  font-size: 14px; /* Smaller font size */
+}
+
+.menu-title,
+.submenu-title {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  margin-right: 10px; /* Reduced margin */
+  color: var(--header-color); /* Blue color for icons */
+  font-size: 18px;
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 14px; /* Smaller font size */
+  color: var(--text-default-color);
+}
+
+.dropdown-icon {
+  color: var(--header-color); /* Blue color for icons */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.menu-item:hover,
+.submenu-item:hover {
+  background-color: var(--sidebar-hover-color); /* Light gray on hover */
+  box-shadow: var(--box-shadow-medium) 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 0px;
+  background-color: #e2e6ea; /* Light gray for submenu */
+  border-radius: 5px; /* Rounded corners */
+  margin: 5px 0;
+}
+
+.submenu-item {
+  padding: 0px 0;
+}
+
+.submenu-title {
+  padding: 8px 10px; /* Reduced padding */
+  color: #333333; /* Dark text for submenu */
+  border-bottom: 1px solid #d3d3d3; /* Light border for separation */
+}
+
+.submenu-title:hover {
+  background-color: #ced4da; /* Slightly darker gray on hover */
+}
+
+.menu-item.active .dropdown-icon {
+  transform: rotate(180deg); /* Rotate dropdown icon when active */
+}
+
+.nav-link {
+  display: block;
+  padding: 0px;
+  color: #007bff; /* Blue color for nav links */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.menu-item.active,
+.submenu-item.active {
+  background-color: #e2e6ea; /* Set background color when active */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+/* Loading spinner */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px; /* Smaller loading text */
+  color: #007bff; /* Change to your desired color */
+  animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 123, 255, 0.3); /* Light blue border */
+  border-top: 4px solid #007bff; /* Blue for top */
+  border-radius: 50%;
+  width: 30px; /* Smaller spinner size */
+  height: 30px; /* Smaller spinner size */
+  animation: spin 1s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .header {
+    font-size: 12px; /* Smaller font for mobile */
+  }
+
+  .header-icons {
+    margin-right: 5px; /* Reduced margin for icons */
+  }
+
+  .sidebar {
+    width: 80%; /* Narrow sidebar for mobile */
+  }
+
+  .main-content {
+    margin-left: 0px; /* Adjust main content for narrow sidebar */
+  }
+
+  .header-logo {
+    display: none;
+  }
+  .mobileView {
+    display: block; /* Show mobile view */
+  }
+
+  .sidebar-visible{
+    margin-left: 0;
+  }
+  
+}
+
+/* Search Results Container */
+.search-results {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Individual Search Result Item */
+.search-result-item {
+  margin: 10px 0; /* Space between items */
+}
+
+/* Search Result Button */
+.search-result-button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color for the button */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Rounded corners for the button */
+  padding: 10px 15px; /* Padding inside the button */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  width: 100%; /* Full width button */
+  text-align: left; /* Left align text inside button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button Hover Effect */
+.search-result-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Strong Text Styling */
+.search-result-button strong {
+  display: block; /* Make strong text block level for better spacing */
+  margin-bottom: 5px; /* Space below strong text */
+  font-weight: bold; /* Ensure strong text is bold */
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding-left: 30px; /* Adjust this value to give space for the icon */
+  text-indent: 22px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Position the icon */
+  color: #999; /* Icon color */
+}
+
+
+.loginTime{
+  color: black !important;
+}
+/*------------------------------------------------------------------*/
+
+
+.toggle-btn,
+.logout-button {
+  background: none;
+  border: none;
+  color: #f8f8f8;
+  /* White for buttons */
+  font-size: 14px;
+  /* Smaller button font size */
+  cursor: pointer;
+  margin-right: 15px;
+  /* Reduced margin */
+  transition: color 0.3s, transform 0.3s;
+  /* Smooth color and transform transition */
+  padding: 0 9px;
+  width: 104px;
+  margin: 0 0 0 8px;
+}
+

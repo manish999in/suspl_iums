@@ -1,0 +1,108 @@
+ol.breadcrumb.modern-breadcrumb{
+  padding: 8px 19px;
+}
+
+.custom-breadcrumb-right {
+  margin-left: auto; /* Pushes the item to the right */
+  text-align: right; /* Ensures text is aligned right */
+}
+.custom-breadcrumb-right:hover {
+  cursor: pointer; /* Cursor changes to hand when hovering over 'Get Details' */
+}
+
+.modern-breadcrumb {
+    /* display: flex; */
+    align-items: center;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc); 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 15px !important;
+  }
+  
+  .modern-breadcrumb .breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .modern-breadcrumb .breadcrumb-item:last-child {
+    color: #f0f0f0;
+    font-weight: bold; 
+    cursor: default; 
+  }
+  
+  .modern-breadcrumb .breadcrumb-item .breadcrumb-icon {
+    margin-right: 10px;
+    color: white !important; 
+    font-size: 1.2rem;
+  }
+  
+  .modern-breadcrumb .breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .modern-breadcrumb .breadcrumb-item a:hover {
+    color: #f0f0f0;
+    transform: translateX(5px);
+  }
+  
+  .modern-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: '››';
+    position: absolute;
+    left: -10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .modern-breadcrumb .breadcrumb-item:hover + .breadcrumb-item::before {
+    color: #f0f0f0;
+  }
+  
+  .modern-breadcrumb .breadcrumb-item span {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .modern-breadcrumb .breadcrumb-item.active span {
+    font-weight: 700; 
+    color: #f0f0f0; 
+  }
+  
+
+  /* BreadCrumb.css */
+
+.breadcrumb {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item {
+  font-size: 1rem;
+}
+
+.breadcrumb-item .breadcrumb-icon {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .breadcrumb {
+    font-size: 0.875rem;  /* Smaller font on mobile */
+  }
+
+  .breadcrumb-item {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}

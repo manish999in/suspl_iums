@@ -1,0 +1,110 @@
+.input-error {
+  border: 3px solid #ff5a5a !important;
+}
+
+.customFont {
+  font-size: 14px;
+}
+.area-input {
+  width: 100%;
+}
+.btn-color {
+  font-size: 15px;
+  padding: 1px 15px 5px 15px;
+  margin: 0px 5px;
+}
+.table th {
+  background: #00444f;
+  color: #fff;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.table td {
+  color: #000;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #94a1af;
+}
+
+.edit-color {
+  color: blue;
+  cursor: pointer;
+}
+.delete-color {
+  color: #f9500c;
+  cursor: pointer;
+}
+.manipulation-text {
+  font-size: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;  /* Width of the icon container */
+  height: 40px; /* Height of the icon container */
+  border-right: 1px solid #ccc; /* Light border only on the right */
+  /* border-radius: 100%; Make the icon container circular */
+  margin-right: 10px; /* Space between the icon and input */
+}
+
+.icon-class {
+  color: #888; /* Icon color */
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+.form-control {
+  font-size: 1rem;
+}
+
+.error-message {
+  color: #ff4d4d; /* Error message color */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.checkbox-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Space between checkboxes */
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and icon */
+}

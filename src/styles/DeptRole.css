@@ -1,0 +1,52 @@
+.newContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../../public/img/large-triangles.svg');
+  background-size: cover;
+}
+
+
+.newCard {
+  background: rgba(29, 24, 24, 0.301);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 30px 20px;
+  min-width: 350px;
+  width: 500px;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.438));
+}
+
+.newTitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.newForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newField {
+  margin-bottom: 0px;
+}
+
+.DeptLabel {
+  margin-bottom: 0px !important;
+  position: relative;
+  top: 23px;
+  color: white;
+}
+
+.newSelect {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}

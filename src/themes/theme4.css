@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*grid icon css*/
+.icon-size{
+  font-size: 16px;
+}
+
+.refresh-table {
+  position: relative;
+  left: 95%;
+  bottom: 32px;
+  font-size: xx-large;
+  cursor: pointer;
+  width: 37px;
+}
+
+
+.ag-header-cell-label{
+  justify-content: center !important;
+}
+
+
+.refresh-table:hover {
+
+  transform: scale(1.01);
+  opacity: 0.9;
+}
+
+.advanceSearchModal{
+  background-color: #e9e3e3fd;
+}
+
+.ReactModal__Content{
+    background: #000C40;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#a7a8a7,#000C40) !important;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#a7a8a7,#000C40) !important;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.advanceSearchHeader{
+  color : white !important
+}
+
+
+.ag-header {
+  background: #a7a8a7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#a7a8a7,#000C40);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a7a8a7,#000C40);
+}
+
+.ag-header-cell{
+  color: white;
+}
+span.ag-icon.ag-icon-filter {
+  color: white;
+}
+
+.odd-row {
+  background-color: #000c4034; /* Light gray background for odd rows */
+}
+
+.ag-input-field-input{
+  color: #000000 !important;
+ 
+ }
+/* Layout container */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* Full height of the viewport */
+  font-family: "Arial", sans-serif;
+  /* Modern font */
+  /* Light grayish-blue background for the whole layout */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  /* Reduced height */
+  background: #a7a8a7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#a7a8a7,#000C40);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a7a8a7,#000C40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000C40;
+  /* White text for contrast */
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  /* Reduced padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  /* Deeper shadow */
+  z-index: 1000;
+  font-size: 14px;
+  /* Smaller font size */
+  transition: background 0.3s;
+  /* Transition for background color */
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-style: normal;
+}
+
+.header:hover {
+  background: linear-gradient(to right, #000C40, #a7a8a7); 
+  /* Darker blue on hover */
+}
+
+.header-icons {
+  margin-left: auto;
+}
+
+.header-logo {
+  width: 161px;
+  margin: 0px 6px 0 0;
+}
+
+button.toggle-button {
+  padding: 4px 10px;
+  margin-right: 15px;
+  border: none;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.toggle-btn,
+.logout-button {
+  background: none;
+  border: none;
+  color: #f8f8f8;
+  /* White for buttons */
+  font-size: 14px;
+  /* Smaller button font size */
+  cursor: pointer;
+  margin-right: 15px;
+  /* Reduced margin */
+  transition: color 0.3s, transform 0.3s;
+  /* Smooth color and transform transition */
+  padding: 0 9px;
+  width: 104px;
+  margin: 0 0 0 8px;
+}
+
+.toggle-btn:hover,
+.logout-button:hover {
+  color: #000C40;
+  /* Red for hover effect */
+  transform: scale(1.1);
+  /* Slightly enlarge on hover */
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  /* Fixed to the left */
+  top: 56px;
+  /* Below the header */
+  left: 0;
+  width: 250px;
+  /* Reduced sidebar width */
+  height: calc(100vh - 56px);
+  /* Full height minus header */
+  background: #a7a8a7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#a7a8a7,#000C40);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a7a8a7,#000C40); 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000C40;
+  /* Dark text for contrast */
+  padding: 10px 5px;
+  /* Reduced padding */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  overflow-y: auto;
+  /* Show scrollbar when content overflows */
+  transition: width 0.3s ease;
+  /* Smooth width transition */
+  z-index: 99;
+  /* Ensure sidebar is above other elements */
+  -webkit-overflow-scrolling: touch;
+  /* Enable smooth scrolling on touch devices */
+  touch-action: pan-y;
+  /* Allow vertical panning */
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Scrollbar styles */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+  /* Width of the scrollbar */
+  opacity: 0;
+  /* Hide scrollbar initially */
+  transition: opacity 0.3s ease;
+  /* Smooth transition for scrollbar appearance */
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  opacity: 1;
+  /* Show scrollbar on hover */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #e9ecef;
+  /* Light gray track background */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #007bff;
+  /* Blue thumb color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+  /* Darker thumb color on hover */
+}
+
+/* Firefox scrollbar */
+.sidebar {
+  scrollbar-width: thin;
+  /* Thinner scrollbar in Firefox */
+  scrollbar-color: var(--header-color) #e9ecef;
+  /* Thumb color and track color */
+}
+
+/* Optional smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide sidebar */
+.sidebar.hidden {
+  width: 0;
+  /* Hide sidebar */
+  overflow: hidden;
+  /* Prevent overflow */
+  padding: 0;
+}
+
+/* Main content area */
+.main-content {
+  padding: 0 0 30px 0;
+  /* Reduced padding */
+  transition: margin-left 0.3s ease;
+  /* Smooth transition for margin change */
+  position: relative;
+  top: 67px;
+  /* Adjust for header height */
+  font-size: 14px;
+  /* Smaller font size */
+}
+
+/* Adjust the main content when sidebar is visible */
+.sidebar-visible {
+  margin-left: 250px;
+  /* Full width for visible sidebar */
+}
+
+/* Adjust the main content when sidebar is hidden */
+.sidebar-hidden {
+  margin-left: 0;
+  /* Full width when sidebar is hidden */
+}
+
+/* Footer styles */
+.footer {
+  background: #F0F2F0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#a7a8a7,#000C40);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a7a8a7,#000C40);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.modern-breadcrumb{
+  background: #F0F2F0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#a7a8a7,#000C40);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a7a8a7,#000C40);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer:hover {
+   background: linear-gradient(to right, #000C40, #a7a8a7); 
+
+}
+
+/* Menu styles */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item,
+.submenu-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  /* Reduced padding */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition */
+  color: #ffffff;
+  /* Dark text for menu items */
+  font-size: 13px;
+  /* Smaller font size */
+  position: relative;
+  /* Relative positioning for dropdown indicators */
+}
+
+
+.submenu-title {
+  color: #ffffff;
+}
+
+.menu-title,
+.submenu-title {
+  display: flex;
+}
+
+/* Dropdown icon styles */
+.dropdown-icon {
+  margin-left: auto;
+  /* Push the icon to the right */
+  color: var(--header-color);
+  /* Icon color */
+  transition: transform 0.3s ease;
+  /* Smooth transition for rotation */
+}
+
+
+
+.submenu {
+  list-style: none;
+  padding-left: 0px;
+  background-color: #000C40;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: none;
+}
+
+.menu-item.active .submenu {
+  display: block;
+  /* Show submenu when parent is active */
+}
+
+
+/* Active state for menu items */
+.menu-item.active .dropdown-icon {
+  transform: rotate(180deg);
+  /* Rotate dropdown icon when active */
+}
+
+/* Profile dropdown adjustments */
+.profile-dropdown {
+  position: absolute;
+  right: 10px;
+  /* Adjust to align with the profile image */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  /* Ensure it appears above other elements */
+}
+
+.profile-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.profile-dropdown button:hover {
+  background-color: #f0f0f0;
+  /* Change background on hover */
+}
+
+/* Search Result Button */
+.search-result-button {
+  color: rgb(34, 32, 32);
+  /* Text color for the button */
+  border: none;
+  /* Remove default button border */
+  border-radius: 4px;
+  /* Rounded corners for the button */
+  padding: 10px 3px;
+  /* Padding inside the button */
+  cursor: pointer;
+  /* Cursor changes to pointer on hover */
+  width: 100%;
+  /* Full width button */
+  text-align: left;
+  /* Left align text inside button */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for hover effect */
+  font-size: 13px;
+}
+
+
+/* Additional styling for icons */
+.menu-icon {
+  margin-right: 10px;
+  /* Reduced margin */
+  color: var(--header-color);
+  /* Blue color for icons */
+  font-size: 14px;
+  /* Icon size */
+  margin-top: 3px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+  .menu-item,
+  .submenu-item {
+    font-size: 12px;
+    /* Smaller font for mobile */
+  }
+
+  .sidebar-visible{
+    margin-left: 0;
+  }
+
+}
+
+ul.search-results {
+  list-style: none;
+  padding: 3px 0;
+}
+
+li.search-result-item {
+  margin: 5px 0;
+}
+
+.loginTime{
+  color: black !important;
+}

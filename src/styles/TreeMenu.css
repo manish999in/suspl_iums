@@ -1,0 +1,83 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed; /* Fixed to the left */
+    top: 78px; /* Below the header */
+    left: 0;
+    width: 250px; /* Sidebar width */
+    height: calc(100vh - 122px); /* Full height minus header */
+    background: linear-gradient(
+      135deg,
+      #343a40 0%,
+      #495057 100%
+    ); /* Gradient background */
+    color: white;
+    padding: 10px 1px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for sidebar */
+    overflow-y: auto; /* Show scrollbar when content overflows */
+    transition: width 0.3s ease; /* Smooth width transition */
+    z-index: 99; /* Ensure sidebar is above other elements */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on touch devices */
+    touch-action: pan-y; /* Allow vertical panning */
+  }
+  
+  /* Webkit browsers (Chrome, Safari, Edge) */
+  .sidebar::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    opacity: 0; /* Hide scrollbar initially */
+    transition: opacity 0.3s ease; /* Smooth transition for scrollbar appearance */
+  }
+  
+  .sidebar:hover::-webkit-scrollbar {
+    opacity: 1; /* Show scrollbar on hover */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: #343a40; /* Track background (match sidebar background) */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #6c757d; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #495057; /* Darker thumb color on hover */
+  }
+  
+  /* Firefox scrollbar */
+  .sidebar {
+    scrollbar-width: thin; /* Thinner scrollbar in Firefox */
+    scrollbar-color: #6c757d #343a40; /* Thumb color and track color */
+  }
+  
+  /* Optional smooth scrolling (can be added for smoother behavior) */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Hide sidebar */
+  .sidebar.hidden {
+    width: 0; /* Hide sidebar */
+    overflow: hidden; /* Prevent overflow */
+    padding: 0;
+    top: 104px;
+  }
+  
+  /* Main content area */
+  .main-content {
+    padding: 0 0 35px 0;
+    transition: margin-left 0.3s ease; /* Smooth transition for margin change */
+    position: relative;
+    top: 80px; /* Adjust for header height */
+  }
+  
+  /* Adjust the main content when sidebar is visible */
+  .sidebar-visible {
+    margin-left: 250px; /* Full width for visible sidebar */
+  }
+  
+  /* Adjust the main content when sidebar is hidden */
+  .sidebar-hidden {
+    margin-left: 0; /* Full width when sidebar is hidden */
+  }

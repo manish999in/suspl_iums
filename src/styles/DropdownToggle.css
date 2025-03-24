@@ -1,0 +1,143 @@
+/* Dropdown Toggle Button */
+.borderDrop {
+    background: none; /* No background color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor for button */
+  }
+  
+  /* Profile Image Style */
+  .profile-image {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    border-radius: 50%; /* Circular image */
+    transition: transform 0.2s; /* Smooth transition */
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0; /* Align with the left edge of the button */
+    background: #fff; /* White background for dropdown */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    z-index: 1; /* Ensure it appears above other elements */
+    min-width: 200px; /* Minimum width for dropdown */
+  }
+  
+  /* Dropdown List Styles */
+  .dropdown-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 10px; /* Padding around the list */
+    margin: 0; /* No margin */
+  }
+  
+  /* User Info Style */
+  .dropdown-header {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space below user info */
+  }
+  
+  /* User Image Style */
+  .user-image {
+    border-radius: 50%; /* Circular image */
+    width: 40px; /* Adjust size */
+    height: 40px; /* Adjust size */
+    margin-right: 10px; /* Space to the right */
+  }
+  
+  /* Link Styles */
+  .dropdown-link {
+    color: black; /* Default link color */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for full clickable area */
+    padding: 10px; /* Padding for better touch target */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  /* Link Hover Effect */
+  .dropdown-link:hover {
+    background: rgba(0, 0, 255, 0.1); /* Light blue background on hover */
+    color: blue; /* Change color on hover */
+  }
+  
+  /* Logout Button Style */
+  .logout-button-drp {
+    background: none; /* No background color */
+    border: none; /* No border */
+    color: blue; /* Logout text color */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px 15px; /* Padding around text */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  /* Logout Button Hover Effect */
+  .logout-button-drp:hover {
+    background: rgba(0, 0, 255, 0.1); /* Light blue background on hover */
+    color: darkred; /* Change text color on hover */
+  }
+  
+
+
+    /* Profile card styling */
+    .profile-card {
+      width: 225px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    
+
+    /* Profile image */
+    .profile-card img {
+      width: 120px;
+    height: 120px;
+    }
+
+    /* User details */
+    .profile-card .user-info {
+      padding: 20px;
+    }
+
+    .user-info h2 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .user-info p {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .user-info .details {
+      font-size: 14px;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    /* Social links */
+    .profile-card .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-links a {
+      color: #1d4ed8;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #0f172a;
+    }

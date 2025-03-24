@@ -1,0 +1,38 @@
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  border: 1px solid #80808087;
+}
+
+.innerLEftToRight {
+  padding: inherit;
+  display: grid;
+  text-align: center;
+  min-width: 120px;
+  width: fit-content;
+  font-size: 12px;
+}
+
+
+.pageInnetChild {
+  /* background: #50a5ff; */
+  background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+  color: #fff;
+  font-weight: 600;
+  padding: 0 45px;
+}
+
+.right0011{
+  border-left: 1px solid gray;
+
+}
+
+.left0011{
+  border-right: 1px solid gray;
+}
+
+.pageInnetChild001134{
+  font-size: 9px;
+  height: 12px;
+}

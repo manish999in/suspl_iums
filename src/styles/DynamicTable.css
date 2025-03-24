@@ -1,0 +1,219 @@
+/* Container body */
+.container-body {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(6.3px); */
+}
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+/* Form labels */
+form label {
+  font-weight: 500;
+  color: #555;
+}
+
+.search-input {
+  margin-bottom: 15px;
+  padding: 2px 10px;
+  width: 99%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Response message */
+.response-message {
+  font-size: 14px;
+  color: green;
+  margin-top: 10px;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+table td {
+  background-color: #fff;
+}
+
+/* Icon styling for edit and delete */
+.edit-color {
+  color: #28a745;
+  cursor: pointer;
+}
+
+.edit-color:hover {
+  color: #218838;
+}
+
+.delete-color {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.delete-color:hover {
+  color: #c82333;
+}
+
+/* Manipulation text styling (Edit/Delete text) */
+.manipulation-text {
+  margin-left: 5px;
+}
+
+/* Table row hover effect */
+table tbody tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+/* General form container */
+.form-container {
+  margin-bottom: 30px;
+}
+
+/* Loading spinner styling */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0, 123, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #007bff;
+  animation: spinner 0.75s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------------------------------------------------------- */
+
+/* Container for search bar */
+.modern-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  position: relative;
+}
+
+/* Search input styling */
+.modern-search-input {
+  width: 100%;
+  padding: 12px 20px;
+  padding-right: 45px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Focus effect for the input */
+.modern-search-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Placeholder styling */
+.modern-search-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Styling for the search button */
+.modern-search-button {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #4a90e2;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Button hover effect */
+.modern-search-button:hover {
+  color: #2c72ba;
+}
+
+/* Button icon styling */
+.modern-search-button svg {
+  pointer-events: none;
+}
+
+/* Table styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 4px 4px 4px 9px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .modern-search-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}

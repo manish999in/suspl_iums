@@ -1,0 +1,360 @@
+.page-item {
+  background-color: goldenrod;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Layout container */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+  font-family: "Arial", sans-serif; /* Modern font */
+}
+
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 78px;
+  background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.header-icons {
+  margin-left: auto; /* Push icons to the right */
+  align-items: center;
+  display: flex;
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.logout-button {
+  margin-left: 20px; /* Spacing between icons and logout button */
+  background-color: transparent; /* Transparent button */
+  border: none; /* Remove default border */
+  color: white;
+  cursor: pointer; /* Pointer cursor */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.logout-button:hover {
+  color: #ff6b6b; /* Change color on hover */
+}
+/* Sidebar styles */
+.sidebar {
+  position: fixed; /* Fixed to the left */
+  top: 78px; /* Below the header */
+  left: 0;
+  width: 250px; /* Sidebar width */
+  height: calc(100vh - 122px); /* Full height minus header */
+  background: linear-gradient(
+    135deg,
+    #343a40 0%,
+    #495057 100%
+  ); /* Gradient background */
+  color: white;
+  padding: 10px 1px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for sidebar */
+  overflow-y: auto; /* Show scrollbar when content overflows */
+  transition: width 0.3s ease; /* Smooth width transition */
+  z-index: 99; /* Ensure sidebar is above other elements */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on touch devices */
+  touch-action: pan-y; /* Allow vertical panning */
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.sidebar::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  opacity: 0; /* Hide scrollbar initially */
+  transition: opacity 0.3s ease; /* Smooth transition for scrollbar appearance */
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  opacity: 1; /* Show scrollbar on hover */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #343a40; /* Track background (match sidebar background) */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #6c757d; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #495057; /* Darker thumb color on hover */
+}
+
+/* Firefox scrollbar */
+.sidebar {
+  scrollbar-width: thin; /* Thinner scrollbar in Firefox */
+  scrollbar-color: #6c757d #343a40; /* Thumb color and track color */
+}
+
+/* Optional smooth scrolling (can be added for smoother behavior) */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Hide sidebar */
+.sidebar.hidden {
+  width: 0; /* Hide sidebar */
+  overflow: hidden; /* Prevent overflow */
+  padding: 0;
+  top: 104px;
+}
+
+/* Main content area */
+.main-content {
+  padding: 0 0 35px 0;
+  transition: margin-left 0.3s ease; /* Smooth transition for margin change */
+  position: relative;
+  top: 80px; /* Adjust for header height */
+}
+
+/* Adjust the main content when sidebar is visible */
+.sidebar-visible {
+  margin-left: 250px; /* Full width for visible sidebar */
+}
+
+/* Adjust the main content when sidebar is hidden */
+.sidebar-hidden {
+  margin-left: 0; /* Full width when sidebar is hidden */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed; /* Position at the bottom */
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Shadow above footer */
+  z-index: 99;
+}
+
+/* Header logo */
+.header-logo {
+  height: 50px;
+}
+
+/* Profile image */
+.profile-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.mobileView {
+  display: none;
+}
+
+/* Menu styles */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item,
+.submenu-item {
+  cursor: pointer;
+  padding: 9px 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff; /* White color for text */
+}
+
+.menu-title,
+.submenu-title {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  margin-right: 15px;
+  color: #ffffff; /* White color for icons */
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown-icon {
+  color: #ffffff; /* White color for dropdown icon */
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover,
+.submenu-item:hover {
+  background-color: #3a3a3a; /* Lighter gray on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 0px;
+  background-color: #ff5733; /* Vibrant orange for submenu */
+  border-radius: 5px; /* Rounded corners */
+  margin: 5px 0;
+}
+
+.submenu-item {
+  padding: 0px 0;
+}
+
+.submenu-title {
+  padding: 9px 8px;
+  color: #ffffff; /* White text for submenu */
+  border-bottom: 1px solid #c14c4c;
+}
+
+
+
+.menu-item.active .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.nav-link {
+  display: block;
+  padding: 0px;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #eee;
+  background-color: goldenrod;
+}
+
+.menu-item.active,
+.submenu-item.active {
+  background-color: #3a3a3a; /* Set background color when active */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Loading spinner */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+  color: #ffffff; /* Change to your desired color */
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #ffffff; /* Change to your desired color */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Icon styles */
+.bar-icon {
+  font-size: 24px; /* Set the font size */
+  color: #b3acac; /* Set the icon color */
+  margin: 2px 6px; /* Add some space to the right */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.bar-icon:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Sidebar toggle button */
+.toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Sidebar when hidden */
+.sidebar.hidden {
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Sidebar visible for mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0; /* Initially hidden on mobile */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed sidebar in mobile */
+    top: 0;
+    left: 0;
+    background: #343a40; /* Sidebar background */
+    z-index: 1000; /* Above all other content */
+    transition: width 0.3s ease; /* Smooth transition */
+  }
+
+  .header-heading,
+  .header-logo,
+  .sub-heading {
+    display: none;
+  }
+  .mobileView {
+    display: block;
+    margin-left: 12px;
+    font-size: 18px;
+  }
+
+  /* When the sidebar is visible on mobile */
+  .sidebar.visible {
+    width: 75%; /* Show the sidebar */
+    z-index: 98;
+    height: calc(100vh - 47px);
+    top: 104px;
+  }
+
+  .main-content {
+    padding-top: 20px;
+    transition: margin-left 0.3s ease;
+    margin-left: 0; /* Full width when sidebar is hidden */
+  }
+}

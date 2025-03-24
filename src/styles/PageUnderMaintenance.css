@@ -1,0 +1,150 @@
+/* Full-screen overlay with gradient and animation */
+.PageUnderMaintenance-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 53px;
+    left: 0px;
+    width: 103vw;
+    height: 87vh;
+	background: linear-gradient(45deg, #FF4E50, #F9D423); /* Vibrant gradient */
+	background-size: 400% 400%;
+	animation: gradientBackground 8s ease infinite; /* Animated gradient */
+	font-family: 'Arial', sans-serif;
+	text-align: center;
+	z-index: 9999;
+	overflow: hidden;
+  }
+  
+  @keyframes gradientBackground {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  
+  /* Content container styling */
+  .PageUnderMaintenance-content {
+	background: rgba(255, 255, 255, 0.85); /* Slight transparency */
+	padding: 60px 40px;
+	border-radius: 12px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+	max-width: 600px;
+	width: 100%;
+	box-sizing: border-box;
+	animation: slideIn 1s ease-out;
+	text-align: center; /* Center text inside the content */
+  }
+  
+  @keyframes slideIn {
+	0% {
+	  transform: translateY(-30px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  /* Icon container with margins */
+  .icon-container {
+	margin-top: 30px; /* Add top margin */
+	margin-bottom: 30px; /* Add bottom margin */
+	display: flex;
+	justify-content: center; /* Center the icon horizontally */
+	align-items: center; /* Center the icon vertically */
+  }
+  
+  .maintenance-icon {
+	width: 100px;
+	height: 100px;
+	animation: rotateIcon 2s linear infinite; /* Continuous rotation */
+  }
+  
+  @keyframes rotateIcon {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  /* Main text styling */
+  .maintenance-text {
+	font-size: 36px;
+	font-weight: bold;
+	color: #FF4E50;
+	animation: fadeInText 2s ease-out;
+  }
+  
+  @keyframes fadeInText {
+	0% {
+	  opacity: 0;
+	  transform: translateY(-20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  /* Subtext styling */
+  .sub-text {
+	font-size: 18px;
+	color: #666;
+	margin-top: 10px;
+	animation: fadeInText 3s ease-out 0.5s; /* Delay for subtext */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+	.PageUnderMaintenance-content {
+	  padding: 40px 20px;
+	}
+  
+	.maintenance-text {
+	  font-size: 28px;
+	}
+  
+	.maintenance-icon {
+	  width: 80px;
+	  height: 80px;
+	}
+  }
+
+ /* Button styling */
+.maintenance1-button {
+	margin-top: 20px; /* Adds spacing above the button */
+	padding: 10px 20px; /* Adds padding for better button appearance */
+	background: linear-gradient(45deg, #FF4E50, #F9D423); /* Same gradient as background */
+	background-size: 400% 400%; /* Background gradient scaling */
+	color: white; /* Text color */
+	border: none; /* Remove the default border */
+	border-radius: 5px; /* Rounded corners */
+	font-size: 16px; /* Font size */
+	cursor: pointer; /* Pointer cursor on hover */
+	animation: gradientBackground 8s ease infinite, fadeInButton 2s ease-out;
+	transition: background 0.5s ease-in-out; /* Smooth background transition */
+  }
+  
+  @keyframes fadeInButton {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  .maintenance1-button:hover {
+	background: linear-gradient(45deg, #F9D423, #FF4E50); /* Reverse gradient on hover */
+  }
+  

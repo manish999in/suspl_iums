@@ -1,0 +1,106 @@
+.forumala-master-card {
+  height: 465px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* Dial Pad */
+.dialpad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dialpad-icon {
+  width: 20px;
+}
+
+.dialpad-btn {
+  background-color: #f1f3f5; /* Light Gray Background */
+  border: 1px solid #ccc; /* Light Border */
+  border-radius: 12px;
+  font-size: 0.8rem;
+  padding: 12px;
+  color: #495057; /* Dark Gray Text */
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Hover Effect */
+.dialpad-btn:hover {
+  background-color: #e2e6ea; /* Slightly darker gray for hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Active Effect */
+.dialpad-btn:active {
+  background-color: #dae0e5; /* Even darker gray when pressed */
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Variations for Different Button Types */
+
+/* Number Buttons */
+.dialpad-btn.number {
+  background-color: #ffffff; /* White Background for numbers */
+  color: #212529; /* Dark Text Color */
+}
+
+.dialpad-btn.number:hover {
+  background-color: #f8f9fa; /* Light Gray on Hover */
+}
+
+/* Operator Buttons (+, -, *, etc.) */
+.dialpad-btn.operator {
+  background-color: #007bff; /* Blue for Operators */
+  color: #ffffff;
+}
+
+.dialpad-btn.operator:hover {
+  background-color: #0056b3; /* Darker Blue on Hover */
+}
+
+/* Clear Button (Cl) */
+.dialpad-btn.clear {
+  background-color: #dc3545; /* Red for Clear */
+  color: #ffffff;
+}
+
+.dialpad-btn.clear:hover {
+  background-color: #c82333; /* Darker Red on Hover */
+}
+
+/* Equal Button (=) */
+.dialpad-btn.equal {
+  background-color: #28a745; /* Green for Equal */
+  color: #ffffff;
+}
+
+.dialpad-btn.equal:hover {
+  background-color: #218838; /* Darker Green on Hover */
+}
+
+/* Decimal Button (.) */
+.dialpad-btn.decimal {
+  background-color: #ffc107; /* Yellow for Decimal */
+  color: #ffffff;
+}
+
+.dialpad-btn.decimal:hover {
+  background-color: #e0a800; /* Darker Yellow on Hover */
+}
+
+/* Clear All Button (Cl AL) */
+.dialpad-btn.clear-all {
+  background-color: #6c757d; /* Gray for Clear All */
+  color: #ffffff;
+}
+
+.dialpad-btn.clear-all:hover {
+  background-color: #5a6268; /* Darker Gray on Hover */
+}

@@ -1,0 +1,29 @@
+/* src/styles/common.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/* Keep scrollbar visible at all times */
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Adjusted scrollbar width */
+    background-color: #2d2d2d; /* Match sidebar background */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: #babac0; /* Color of the scrollbar */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background-color: #2d2d2d; /* Match sidebar background */
+  }
+  

@@ -1,0 +1,44 @@
+/* Close button (red cross at top right) */
+.close-button {
+    position: absolute;
+    top: -5px;
+    right: 1px;
+    background: #ff0000;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    width: 26px;
+    height: 30px;
+  }
+
+  
+
+  .addRemoveButtonHighlight{
+    background: #b5eff5;
+    padding: 11px !important;
+    bottom: 62px !important;
+    width: 165px !important;
+  }
+  
+  .ReactModal__Content.ReactModal__Content--after-open {
+    inset: 50% auto auto 55% !important;
+}
+  
+  
+  .addRemoveButtoninCustomModal {
+    width: 158px;
+    position: relative;
+    left: 194px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    bottom: 58px;
+  }
+  
+  
+  .addRemoveButtoninCustomModal:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  
+  

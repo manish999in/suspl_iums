@@ -1,0 +1,178 @@
+/* Global Variables */
+:root {
+    --pink-50: #fce4ec;
+    --pink-100: #f8bbd0;
+    --pink-200: #f48fb1;
+    --pink-300: #f06292;
+    --pink-400: #ec407a;
+    --pink-700: #c2185b;
+    --font-primary: "Poppins", sans-serif;
+    --background-light: #fefefe;
+    --background-dark: #222;
+    --text-dark: #333;
+    --text-light: #f9f9f9;
+    --border-radius: 15px;
+    --transition-speed: 0.3s;
+    --max-width: 25rem;
+  }
+  
+ 
+  
+  /* Upload Area Container */
+  .upload-area {
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    max-width: var(--max-width);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(218, 229, 255, 0.6);
+    border: 2px solid var(--pink-200);
+    margin: 0.625rem;
+    transition: all var(--transition-speed) ease-in-out;
+    overflow: hidden; /* Prevents overflowing content */
+  }
+  
+  .upload-area:hover {
+    box-shadow: 0 12px 40px rgba(218, 229, 255, 0.8);
+  }
+  
+  /* Upload Area Header */
+  .upload-area__header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .upload-area__title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .upload-area__paragraph {
+    font-size: 0.8rem;
+    color: var(--pink-400);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Drop Zone Styles */
+  .upload-area__drop-zone {
+    border: 2px dashed var(--pink-200);
+    border-radius: var(--border-radius);
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    transition: border-color var(--transition-speed), background-color var(--transition-speed);
+  }
+  
+  .upload-area__drop-zone:hover {
+    border-color: var(--pink-400);
+    background-color: var(--pink-50);
+  }
+  
+  .upload-area__drop-zone .drop-zone__icon {
+    font-size: 2rem;
+    color: var(--pink-400);
+  }
+  
+  .upload-area__drop-zone .drop-zone__paragraph {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-top: 1rem;
+  }
+  
+  /* Loading Text */
+  .drop-zone__loading-text {
+    font-size: 1.125rem;
+    color: var(--pink-400);
+    font-weight: 500;
+    margin-top: 1rem;
+    display: block;
+    transition: opacity var(--transition-speed);
+  }
+  
+  /* File Preview Styles */
+  img#previewImage {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    object-fit: cover; /* Ensure image is fully contained within the box */
+    height: 200px;
+  }
+  
+  /* Uploaded File Details */
+  .upload-area__file-details {
+    text-align: left;
+    margin-top: 2rem;
+  }
+  
+  .uploaded-file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background-color: var(--pink-50);
+    border-radius: var(--border-radius);
+    padding:0.5rem 1rem;
+  }
+  
+  .uploaded-file__icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .uploaded-file__icon {
+    font-size: 1.4rem;
+    color: var(--pink-400);
+    margin-right: 1rem;
+  }
+  
+  .uploaded-file__icon-text {
+    font-size: 0.8rem;
+    color: var(--pink-700);
+    font-weight: 600;
+  }
+  
+  .uploaded-file__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .uploaded-file__name {
+    font-size: 0.8rem;
+    color: var(--text-dark);
+  }
+  
+  .uploaded-file__counter {
+    font-size: 0.875rem;
+    color: var(--pink-400);
+    font-weight: 600;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    body {
+      font-size: 1rem;
+    }
+  
+    .upload-area {
+      padding: 1.5rem 1.5rem 4rem;
+      width: 90%;
+    }
+  
+    .upload-area__title {
+      font-size: 0.6rem;
+    }
+  
+    .upload-area__paragraph {
+      font-size: 0.9rem;
+    }
+  
+    .upload-area__drop-zone {
+      padding: 2.5rem;
+    }
+  
+    img#previewImage {
+      margin-top: 1rem;
+    }
+  }
+  

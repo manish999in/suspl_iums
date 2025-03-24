@@ -1,0 +1,194 @@
+/* Defining CSS variables for colors, fonts, and general aesthetics */
+:root {
+  --pink-50: #fce4ec;
+  --pink-100: #f8bbd0;
+  --pink-200: #f48fb1;
+  --pink-300: #f06292;
+  --pink-400: #ec407a;
+  --pink-700: #c2185b;
+  --font-primary: "Poppins", sans-serif;
+  --font-size-base: 13px;
+  --background-light: #fefefe;
+  --background-dark: #222;
+  --text-dark: #333;
+  --text-light: #f9f9f9;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+/* Container for the entire tabs section */
+.tabs-container {
+  width: 100%;
+  font-family: var(--font-primary);
+  background-color: var(--background-light);
+}
+
+/* Tabs container holding individual tab buttons */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--pink-300);
+  background-color: var(--background-light);
+  padding: 10px 0;
+  border-radius: 12px 12px 0 0;
+  flex-wrap: wrap; /* Allow tabs to wrap on small screens */
+}
+
+/* Styling for each tab button */
+.tab-button {
+  /* background: none; */
+  border: none;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  margin: 2px; /* Add margin between buttons */
+  box-shadow: 0 2px 5px var(--shadow-light);
+}
+
+/* Active tab state, highlighted with bold font and color */
+.tab-button.active {
+  border-bottom: 3px solid var(--pink-400);
+  color: var(--pink-400);
+  font-weight: 600;
+  background-color: var(--pink-50);
+  box-shadow: 0 2px 8px var(--shadow-dark);
+}
+
+/* Hover state with smooth color transition */
+.tab-button:hover {
+  color: var(--pink-300);
+  background-color: var(--pink-100);
+  transform: scale(1.05);
+}
+
+/* Content area below the tabs */
+.tab-content {
+  font-size: var(--font-size-base);
+  color: var(--text-dark);
+  margin-top: 15px;
+}
+
+/* Transition effect for smoother appearance of tab content */
+.tab-content > * {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Disable button when needed */
+.tab-button:disabled {
+  background-color: var(--pink-200);
+  cursor: not-allowed;
+}
+
+/* Navigation buttons (Previous & Next) */
+.tab-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-button {
+  background-color: var(--pink-300);
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  margin: 2px;
+  box-shadow: 0 2px 5px var(--shadow-light);
+}
+
+.nav-button:hover {
+  background-color: var(--pink-400);
+}
+
+.nav-button:disabled {
+  background-color: var(--pink-200);
+  cursor: not-allowed;
+}
+
+
+.tab-navigation button {
+  padding: 2px 6px;
+  font-size: 16px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-navigation button:disabled {
+  background-color: #d6d6d6; /* Light gray for disabled */
+  cursor: not-allowed;
+}
+
+.tab-navigation button:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (Tablets and Mobile) */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column; /* Stack the tabs vertically */
+    align-items: center; /* Center align the tab buttons */
+  }
+
+  .tab-button {
+    font-size: 14px; /* Slightly increase font size for better readability */
+    padding: 10px 15px; /* Adjust padding for touch devices */
+    width: 100%; /* Make buttons full width for easier touch */
+    margin: 5px 0; /* Add spacing between buttons */
+  }
+
+  .tab-content {
+    font-size: 14px; /* Adjust content text for smaller screens */
+    padding: 15px 10px; /* Adjust padding for mobile */
+  }
+}
+
+/* For screens smaller than 480px (Mobile devices) */
+@media (max-width: 480px) {
+  .tabs {
+    padding: 12px 0;
+  }
+
+  .tab-button {
+    font-size: 15px; /* Increase font size for readability on mobile */
+    padding: 12px 20px;
+    margin: 6px 0; /* Allow buttons to be stacked with some spacing */
+    width: 100%; /* Make buttons full width for easier touch */
+  }
+
+  .tab-button.active {
+    font-weight: bold; /* Make active tab more distinct */
+  }
+
+  .tab-content {
+    font-size: 16px; /* Adjust the font size for mobile screens */
+    padding: 15px;
+  }
+}

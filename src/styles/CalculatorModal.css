@@ -1,0 +1,101 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .display {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .modal-dialog {
+    max-width:420px /* Set a max width to control the size */
+  }
+  
+  .display-input {
+    width: 100%;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    border: none;
+    background-color: #1c1c1c;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .buttonrow {
+    display: flex;
+    justify-content: space-evenly; /* Ensures minimal but even spacing */
+    width: 100%;
+    margin-bottom: -6px;
+  }
+  
+  .button-cal {
+    font-size: 1.5em;
+    padding: 15px;
+    margin: 5px; /* Space between buttons */
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 60px; /* Uniform size for all buttons */
+    height: 60px; /* Same height for consistency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .button-cal:hover {
+    background-color: #444;
+  }
+  
+  .button-cal:active {
+    transform: scale(0.95);
+  }
+  
+  .operator {
+    background-color: #f39c12;
+  }
+  
+  .operator:hover {
+    background-color: #e67e22;
+  }
+  
+  .equal {
+    background-color: #4CAF50;
+    width: 60px; /* Equal button size should be same as other buttons */
+    height: 60px;
+  }
+  
+  .equal:hover {
+    background-color: #45a049;
+  }
+  
+  .clear {
+    background-color: #e74c3c;
+  }
+  
+  .clear:hover {
+    background-color: #c0392b;
+  }
+  
+  .advanced {
+    background-color: #3498db;
+  }
+  
+  .advanced:hover {
+    background-color: #2980b9;
+  }
+  

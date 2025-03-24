@@ -1,0 +1,57 @@
+.session-timeout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Position it fixed so it covers the whole viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with opacity 0.4 */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.session-timeout-content {
+  background: white; /* Add a white background for the content */
+  padding: 40px; /* Add padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 500px; /* Optional: Limit max width for better readability */
+  width: 100%; /* Ensure it stretches to 100% of the container's width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.session-timeout-icon {
+  font-size: 50px; /* Increase icon size */
+  color: #ff4757; /* Match with the link color */
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+.session-timeout-title {
+  font-size: 36px;
+  margin-bottom: 10px; /* Reduced margin */
+  color: #333;
+}
+
+.session-timeout-message {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.session-timeout-home-link {
+  padding: 12px 24px; /* Slightly larger button */
+  background-color: #ff4757; /* Primary color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s; /* Add transform for effect */
+  font-weight: bold; /* Make the button text bold */
+}
+
+.session-timeout-home-link:hover {
+  background-color: #e84118;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
